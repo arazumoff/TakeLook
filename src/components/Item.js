@@ -1,16 +1,17 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'antd';
 
 const { Meta } = Card;
 
-class Item extends Component{
+class Item extends PureComponent{
 
     render(){
         const {item} = this.props;
+        console.log('render');
         return(
                 <Card
-                    style={{'margin-bottom':'16px'}}
+                    style={{'marginBottom':'16px'}}
                     hoverable
                     cover={
                         <div className="cover" style={{'background':`url("${item.view[0]}") no-repeat`}}>
@@ -28,6 +29,7 @@ Item.propTypes = {
     item: PropTypes.shape({
         name: PropTypes.string.isRequired,
         view: PropTypes.array.isRequired,
+        params: PropTypes.array.isRequired,
         price: PropTypes.number.isRequired
     })
 }
