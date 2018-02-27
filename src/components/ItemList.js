@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux'
+import React, { Component } from "react";
+import { connect } from "react-redux";
 import {Col, Row} from "antd/lib/index";
 
 import Item from "./Item";
-import {startLoadAction} from '../actions';
-import {getFilteredItems, isLoading} from '../selectors';
+import {startLoadAction} from "../actions";
+import {getFilteredItems, isLoading} from "../selectors";
 
 class ItemList extends Component{
 

@@ -1,4 +1,4 @@
-import * as types from '../constants/ActionTypes';
+import * as types from "../constants/ActionTypes";
 
 const initialState = {
     tags:[],
@@ -13,7 +13,7 @@ const filters = (state = initialState, action) => {
         case types.DELETE_TAGS:
             return {...state, tags: state.tags.filter(t => t !== action.tag)};
         case types.CHANGE_PRICE:
-            return {...state, start_price: action.price[0], stop_price: action.price[1]}
+            return {...state, start_price: action.price[0], stop_price: action.price[1]};
         default:
             return state
     }

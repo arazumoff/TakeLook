@@ -1,4 +1,4 @@
-import * as types from '../constants/ActionTypes';
+import * as types from "../constants/ActionTypes";
 
 const initialState = {
     data:[],
@@ -12,6 +12,6 @@ const items = (state = initialState, action) => {
         default:
             return state
     }
-}
+};
 
 export default items

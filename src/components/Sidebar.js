@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux'
+import React, { Component } from "react";
+import { connect } from "react-redux";
 import {Col} from "antd";
 
-import {addTagAction, deleteTagAction, changePriceAction} from '../actions';
+import {addTagAction, deleteTagAction, changePriceAction} from "../actions";
 import {getMinPrice, getMaxPrice, isLoading} from "../selectors";
 import Pricer from "./Pricer";
 import Tags from "./Tags";

@@ -1,6 +1,6 @@
-import { call, put, takeLatest, select } from 'redux-saga/effects';
-import * as types from '../constants/ActionTypes';
-import {apiFetchList} from '../Api';
+import { call, put, takeLatest, select } from "redux-saga/effects";
+import * as types from "../constants/ActionTypes";
+import {apiFetchList} from "../Api";
 
 import {getMinPrice, getMaxPrice} from "../selectors";
 

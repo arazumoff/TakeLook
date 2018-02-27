@@ -1,6 +1,6 @@
-import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
-import { Card } from 'antd';
+import React, { PureComponent } from "react";
+import PropTypes from "prop-types";
+import { Card } from "antd";
 
 const { Meta } = Card;
 
@@ -8,7 +8,6 @@ class Item extends PureComponent{
 
     render(){
         const {item} = this.props;
-        console.log('render');
         return(
                 <Card
                     style={{'marginBottom':'16px'}}
@@ -32,5 +31,5 @@ Item.propTypes = {
         params: PropTypes.array.isRequired,
         price: PropTypes.number.isRequired
     })
-}
+};
 export default Item;

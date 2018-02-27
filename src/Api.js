@@ -1,6 +1,6 @@
-import fetch from 'isomorphic-fetch';
+import fetch from "isomorphic-fetch";
 
-const SERVER_URL = '';
+const SERVER_URL = "";
 
 const callApi=(endpoint, params)=>{
     const fullUrl = (endpoint.indexOf(SERVER_URL) === -1) ? SERVER_URL + endpoint : endpoint;
@@ -16,4 +16,4 @@ const callApi=(endpoint, params)=>{
         .catch(error => {throw error});
 };
 
-export const apiFetchList=()=>callApi(`/studios.json`);
+export const apiFetchList=()=>callApi("/studios.json");

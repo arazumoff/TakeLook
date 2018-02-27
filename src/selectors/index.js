@@ -1,4 +1,4 @@
-import { createSelector } from 'reselect';
+import { createSelector } from "reselect";
 
 const getItems = state => state.items.data;
 const getFilters = state => state.filters;

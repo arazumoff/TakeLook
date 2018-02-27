@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import {Slider} from "antd/lib/index";
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import {Slider} from "antd";
 
 
 class Pricer extends Component{
@@ -19,12 +19,13 @@ class Pricer extends Component{
                     defaultValue={range}
                     min={init_start}
                     max={init_stop}
-                    onAfterChange={(val)=>this.props.onChange(val)} />
+                    onAfterChange={this.props.onChange} />
             </div>
         )
     }
 }
 Pricer.propTypes = {
+    isLoading: PropTypes.bool.isRequired,
     init_start: PropTypes.number.isRequired,
     init_stop: PropTypes.number.isRequired,
     start_price: PropTypes.number.isRequired,

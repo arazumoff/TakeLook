@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import { Row, Col } from 'antd';
+import React, { Component } from "react";
+import { Row, Col } from "antd";
 
-import Sidebar from '../components/Sidebar';
+import Sidebar from "../components/Sidebar";
 import ItemList from "../components/ItemList";
 
 class App extends Component {
